@@ -1,0 +1,48 @@
+h1{
+	text-align: center;
+	padding-left: 30px;
+}
+p{
+	margin: 30px,10px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.aa{
+	background-color: gray;
+	color: floralwhite;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.aa a{
+	padding-left: 20px;
+	text-decoration: none;
+	margin: 20px,10px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-right: 10px;
+	color: floralwhite;
+}
+a:hover{
+	background-color: maroon;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left:20pxsss ;
+}
+body{
+	background-color: bisque;
+}
+body{
+		background-image: url("https://llt.imgix.net/v1/1623102986-homepage-yellow-background-illustration.jpg?ixlib=rb-3.3.1&fit=crop&auto=format%2Ccompress&w=1168&crop=focalpoint&fp-x=0.5&fp-y=0.5&ar=2.6661335465813676");
+	}
+.a{
+	padding-left: 200px;
+}
+ #blink {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }

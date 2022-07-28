@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Courses</title>
+</head>
+<style>
+	* {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+     .mySlides {display: none}
+     img {vertical-align: middle;}
+	.slideshow-container{
+		 max-width: 1000px;
+         position: relative;
+         margin: auto;
+	}
+	body{
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU41Y0jOw3lttMu4TCEaadptaCSqgDtg3aA&usqp=CAU");
+	}
+  h1{
+    text-align: center;
+  }
+  p{
+    color: floralwhite;
+  }
+  li{
+    color: floralwhite;
+  }
+	.prev, .next {
+                   cursor: pointer;
+                   position: absolute;
+                   top: 50%;
+                   width: auto;
+                   padding: 16px;
+                   margin-top: -22px;
+                   color: white;
+                   font-weight: bold;
+                   font-size: 18px;
+                   transition: 0.6s ease;
+                   border-radius: 0 3px 3px 0;
+                   user-select: none;
+    }
+    .next {
+               right: 0;
+               border-radius: 3px 0 0 3px;
+   }
+   .prev:hover, .next:hover {
+                             background-color: rgba(0,0,0,0.8);
+   }
+   .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+   }
+   .numbertext {
+                color: #f2f2f2;
+               font-size: 12px;
+               padding: 8px 12px;
+               position: absolute;
+               top: 0;
+   }
+   .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+               background-color: #717171;
+  }
+  .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+  @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  }
+  .a{
+    width: 100%;
+  }
+
+</style>
+<body>
+    <h1>Courses</h1>
+    <p>There are many courses available in our different plans</p><br>
+    <p>These include:</p>
+    <ul>
+    	<li>HTML</li>
+    	<li>CSS</li>
+    	<li>C</li>
+    	<li>JAVA</li>
+    	<li>PYTHON</li>
+    	<li>JAVA SCRIPT</li>
+    </ul>
+    <p>and many more</p>
+    <div class="slideshow-container">
+    	<div class="mySlides fade">
+    		<div class="numbertext">1 / 6</div>
+    		<img class="a" src="C:\Users\sowmy\OneDrive\Pictures\Camera Roll\htmll-tutorial.jpg">
+    		<div class="text">html</div>
+    	</div>
+    	<div class="mySlides fade">
+    		<div class="numbertext">2 / 6</div>
+    		<img  class="a" src="C:\Users\sowmy\OneDrive\Pictures\Camera Roll\css.jpg">
+    		<div class="text">Css</div>
+    	</div>
+    	<div class="mySlides fade">
+    		<div class="numbertext">3/ 6</div>
+    		<img class="a" src="C:\Users\sowmy\OneDrive\Pictures\cc.jpg">
+    		<div class="text">C</div>
+    	</div>
+    	<div class="mySlides fade">
+    		<div class="numbertext">4 / 6</div>
+    		<img class="a" src="C:\Users\sowmy\OneDrive\Pictures\Camera Roll\javaa.jpg">
+    		<div class="text">Java</div>
+    	</div>
+    	<div class="mySlides fade">
+    		<div class="numbertext">5 / 6</div>
+    		<img class="a" src="C:\Users\sowmy\OneDrive\Pictures\Camera Roll\p.jfif">
+    		<div class="text">Python</div>
+    	</div>
+    	<div class="mySlides fade">
+    		<div class="numbertext">6 / 6</div>
+    		<img class="a" src="C:\Users\sowmy\OneDrive\Pictures\Camera Roll\jss.jpg">
+    		<div class="text">Java Script</div>
+    	</div>
+    	<a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span> 
+       <span class="dot" onclick="currentSlide(2)"></span> 
+       <span class="dot" onclick="currentSlide(3)"></span> 
+       <span class="dot" onclick="currentSlide(4)"></span>
+       <span class="dot" onclick="currentSlide(5)"></span>
+       <span class="dot" onclick="currentSlide(6)"></span>   
+    </div>
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</html>

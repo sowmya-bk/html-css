@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+</head>
+<style>
+	h1{
+		text-align: center;
+	}
+	body{
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU41Y0jOw3lttMu4TCEaadptaCSqgDtg3aA&usqp=CAU");
+	
+	}
+	.flex-container {
+  display: flex;
+  background-color: dimgray;
+}
+
+.flex-container > div {
+  background-color: lightgoldenrodyellow;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+.accordion {
+  background-color: gray;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+<body>
+	<h1>About Us</h1>
+	<p>There are many reasons why everyone try to utlize these courses</p>
+	<div class="flex-container">
+    <div>Simple</div>
+    <div>Easy</div>
+    <div>Unambitious</div>  
+    </div><br><br><br>
+   <button class="accordion">HTML</button>
+<div class="panel">
+  <p>These courses provide you with necessary information regarding html and is providedd with the lectures given by many top class professionals in the field of Information Technology.</p>
+</div>
+
+<button class="accordion">CSS</button>
+<div class="panel">
+  <p>These courses provide you with necessary information regarding css and is providedd with the lectures given by many top class professionals in the field of Information Technology.</p>
+</div>
+
+<button class="accordion">Java script</button>
+<div class="panel">
+  <p>These courses provide you with necessary information regarding js and is providedd with the lectures given by many top class professionals in the field of Information Technology.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>

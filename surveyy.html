@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+</head>
+<style>
+	body{
+		background-image: url("https://media.istockphoto.com/photos/textbooks-on-wooden-school-desk-with-chalkboard-picture-id1033277722?b=1&k=20&m=1033277722&s=170667a&w=0&h=sPkUuyDN23-yM5CHNN03qLo7Azph_Ud_SEcAJhelcjE=");
+	}
+	h1{
+		text-align: center;
+	}
+	input{
+		background-color: floralwhite;
+	}
+	label{
+		color: floralwhite;
+	}
+	.a{
+		background-color: lightgoldenrodyellow;
+	}
+	.b{
+		padding-left: 600px;
+	}
+</style>
+<body>
+	<h1>Survey</h1>
+	<form class="b" action=".\Desktop\forms" method="post">
+		<label for="name">Name:</label><br>
+		<input class="a" type="text" name="user name" id="name"><br><br>
+		<label for="mail">email:</label><br>
+		<textarea class="a" id="mail" name="usermail"></textarea><br><br>
+		<label for="age">Age:</label><br>
+		<input class="a" type="number" name="userage" id="age" step="1"><br><br>
+		<label>Courses Interested:</label><br>
+		<input class="a" type="checkbox" name="course" id="cs">
+		<label for="cs">CSS</label><br>
+		<input class="a" type="checkbox" name="course" id="java">
+		<label for="java">Java</label><br>
+		
+		<input class="a" type="checkbox" name="course" id="python">
+		<label for="python">Python</label><br>
+		<input class="a" type="checkbox" name="course" id="html">
+		<label for="html">HTML</label><br>
+		<input class="a" type="checkbox" name="course" id="c">
+		<label for="c">C</label><br><br>
+		<label>Are You Interested?</label><br>
+		<input class="a" type="radio" name="answer" id="yes">
+		<label for="yes">Yes</label><br>
+		<input class="a" type="radio" name="answer" id="no">
+		<label for="no">No</label><br><br>
+		<label>Does our courses are helpfull?</label><br>
+		<input class="a" type="radio" name="answer" id="yes">
+		<label for="yes">Yes</label><br>
+		<input class="a" type="radio" name="answer" id="no">
+		<label for="no">No</label><br><br>
+		<label for="rate">How would you rate us?</label><br>
+		<input class="a" type="number" name="rating" id="rate" step="1" min="0" max="10"><br><br>
+		<button class="a" type="submit" value="submit">Submit</button>
+	</form>
+
+</body>
+</html>

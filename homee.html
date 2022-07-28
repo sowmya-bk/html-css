@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	
+</head>
+<style>
+	
+	*{
+		box-sizing: border-box;
+
+	}
+	body{
+		background-image: url("https://www.guarana-technologies.com/wp-content/uploads/2019/03/Education-Technology.jpg");
+	}
+	.cc{
+		padding-top: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	[class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid black;
+        
+        margin-left: 10px;
+        background-color: lightsteelblue;
+
+    } 
+    h1{
+    	color: floralwhite;
+    }
+    p{
+    	color: floralwhite;
+    }
+    
+	
+	.col-1 {width: 20%;}
+    .col-2 {width: 20%;}
+    .col-3 {width: 20%;}
+    .col-4 {width: 20%;}
+    
+	.anim-bg-gradient {
+  padding: 0.6em 1.2em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(120deg, darkmagenta, crimson, orange);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position .5s;
+}
+
+.anim-bg-gradient:hover {
+  background-position: 0 0;
+}
+	
+	
+	
+	h1,h3{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+	}
+	.b{
+		 padding: 15px 25px;
+         font-size: 18px;
+         text-align: center;
+         cursor: pointer;
+         outline: none;
+         color: #fff;
+         background-color: #04AA6D;
+         border: none;
+         border-radius: 15px;
+         box-shadow: 0 9px #999;
+
+
+	}
+	.b:hover {background-color: #3e8e41}
+
+    .b:active {
+                 background-color: #3e8e41;
+                 box-shadow: 0 5px #666;
+                 transform: translateY(4px);
+    }
+</style>
+<body>
+	<div id="nav-placeholder">
+
+    </div>
+	<script>
+       $(function(){
+           $("#nav-placeholder").load("navv.html");
+       });
+    </script>
+
+
+	<h1>Plans</h1>
+	<p>
+		There are various plans available here.
+	</p>
+	<div class="cc">
+		<div class="col-1">
+			<h3>Free Course</h3>
+			<h4>Contents</h4>
+			  <ul>
+			  	<li>Tutorials</li>
+			  	<li>Videos</li>
+			  	<li>Assessments</li>
+			  </ul>
+			  <br><br><br><br><br><br>
+		</div>
+		<div class="col-2">
+			<h3>Paid Course</h3>
+			<h4>Contents</h4>
+			  <ul>
+			  	<li>Tutorials</li>
+			  	<li>Videos</li>
+			  	<li>Assessments</li>
+			  	<li>Moc tests</li>
+			  </ul>
+			  <br><br>
+			  <button class="reset anim-bg-gradient">BUY</button>
+			  <br><br>
+		</div>
+		<div class="col-3">
+			<h3>Paid Course</h3>
+			<h4>Contents</h4>
+			  <ul>
+			  	<li>Tutorials</li>
+			  	<li>Videos</li>
+			  	<li>Assessments</li>
+			  	<li>Moc tests</li>
+			  	<li>Live Projects</li>
+			  </ul>
+			 <br><br>
+			 <button class="reset anim-bg-gradient">BUY</button>
+			 <br>
+		</div>
+		<div class="col-4">
+			<h3>Paid Course</h3>
+			<h4>Contents</h4>
+			  <ul>
+			  	<li>Tutorials</li>
+			  	<li>Videos</li>
+			  	<li>Assessments</li>
+			  	<li>Moc tests</li>
+			  	<li>Live Projects</li>
+			  	<li>Live Classes</li>
+			  </ul>
+			  <br>
+			 <button class="reset anim-bg-gradient">BUY</button> 
+		
+	    </div>
+	
+
+</body>
+</html>
